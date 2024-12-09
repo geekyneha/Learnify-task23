@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    height: 93vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  /* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#CC2B52;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navButton {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navButton:hover {
+    background-color: white;
+    background-color:palevioletred;
+  }
+  
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #DE7C7D;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebarTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuItem {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .menuItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .header p {
+    margin: 0.5rem 0 0;
+    color: #666;
+  }
+  
+  .widgets {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .widget {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #AF1740;
+    color: white;
+    margin-top: auto;
+  }

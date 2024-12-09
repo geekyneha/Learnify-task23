@@ -1,0 +1,118 @@
+
+.container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#AF1740;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navButton {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navButton:hover {
+  background-color: white;
+  background-color:palevioletred;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: #f0f2f5;
+  padding: 3rem 2rem;
+  height: 40vh;
+  background: antiquewhite;
+  background-image: url('https://i.pinimg.com/736x/9e/79/1a/9e791a62c39e08ef875c7024a00349b9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+    background-color:palevioletred;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+    background-color:palevioletred;
+}
+
+/* Main Content */
+.mainContent {
+  
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center ;
+  
+}
+
+.mainContent section {
+  margin-bottom: 2rem;
+  width: 30%;
+}
+
+.mainContent h2 {
+    
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color:#AF1740;
+  color: white;
+}
