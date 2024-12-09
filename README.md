@@ -15,9 +15,3 @@ This project demonstrates how to implement routing in a React application using 
 
 You can view the live project [here](https://learnify-task23.vercel.app/).
 
-## Installation
-To run this project locally:
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-cd <project-name>
