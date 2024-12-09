@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./login.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const navigate=useNavigate();
   return (
     <div className={styles.outerContainer}>
         <div className={styles.container}>
@@ -33,7 +35,7 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className={styles.button} onClick={()=>navigate('/')}>
           Login
         </button>
         <div className={styles.forgotPassword}>

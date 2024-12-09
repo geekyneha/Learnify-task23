@@ -1,8 +1,10 @@
 
 import React from "react";
 import styles from "./signup.module.css";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+    const navigate= useNavigate();
   return (
     <div className={styles.outerContainer}>
     <div className={styles.container}>
@@ -32,6 +34,7 @@ const SignUp = () => {
             className={styles.input}
             placeholder="Enter your email"
             required
+            onChange={(e)=>e.target}
           />
         </div>
         <div className={styles.formGroup}>
@@ -60,7 +63,7 @@ const SignUp = () => {
             required
           />
         </div>
-        <button type="submit" className={styles.button}>
+        <button type="submit" className={styles.button}  onClick={()=>navigate('/')}>
           Sign Up
         </button>
       </form>

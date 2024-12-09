@@ -1,15 +1,17 @@
 
 import React from "react";
 import styles from "./dashboard.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+    const navigate=useNavigate();
   return (
     <>
     <nav className={styles.navbar}>
-        <div className={styles.logo}>Learnify</div>
+        <div className={styles.logo}  onClick={()=>navigate('/')}>Learnify</div>
         <ul className={styles.navLinks}>
-          <li><button className={styles.navButton}>Login</button></li>
-          <li><button className={styles.navButton}>Sign Up</button></li>
+          <li><button className={styles.navButton} onClick={()=>navigate('/Login')}>Login</button></li>
+          <li><button className={styles.navButton} onClick={()=>navigate('/Signup')}>Sign Up</button></li>
         </ul>
       </nav> 
       <div className={styles.container}>
@@ -20,7 +22,7 @@ const Dashboard = () => {
           <li className={styles.menuItem}>Home</li>
           <li className={styles.menuItem}>Profile</li>
           <li className={styles.menuItem}>Settings</li>
-          <li className={styles.menuItem}>Logout</li>
+          <li className={styles.menuItem} onClick={()=>navigate('/Login')}>Logout</li>
         </ul>
       </aside>
 

@@ -1,16 +1,18 @@
 
 import React from "react";
 import styles from "./home.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate= useNavigate();
   return (
     <div className={styles.container}>
    
       <nav className={styles.navbar}>
         <div className={styles.logo}>Learnify</div>
         <ul className={styles.navLinks}>
-          <li><button className={styles.navButton}>Login</button></li>
-          <li><button className={styles.navButton}>Sign Up</button></li>
+          <li><button className={styles.navButton} onClick={()=>navigate('/Login')}>Login</button></li>
+          <li><button className={styles.navButton} onClick={()=>navigate('/Signup')}>Sign Up</button></li>
         </ul>
       </nav>
 
@@ -18,7 +20,7 @@ const Home = () => {
       <header className={styles.header}>
         <h1>Welcome to Learnify</h1>
         <p>Your journey begins here!</p>
-        <button className={styles.ctaButton}>Get Started</button>
+        <button className={styles.ctaButton} onClick={()=>navigate('/dashboard')}>Get Started</button>
       </header>
 
       {/* Main Content */}
